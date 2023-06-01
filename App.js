@@ -1,20 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StatusBar, SafeAreaView, Text, View } from 'react-native';
+import { useFonts, Ubuntu_400Regular, Ubuntu_700Bold } from '@expo-google-fonts/ubuntu';
 
+
+import Index from './src/telas/Home';
+import Camera from './src/telas/Camera/camera';
 export default function App() {
+  const [fonteCarregada] = useFonts({
+    "UbuntuBold": Ubuntu_700Bold, 
+    "UbuntuRegular": Ubuntu_400Regular,
+  });
+
+  if (!fonteCarregada) {
+    return <Text>Carregando...</Text>
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView>
+      <StatusBar />
+        <Index />
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
