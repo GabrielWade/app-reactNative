@@ -1,11 +1,16 @@
 import React from "react";
-import { Button, StyleSheet, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import Texto from "../../../componentes/Texto";
 
+import { useNavigation } from "@react-navigation/native";
+
+
 export default function BotaoCamera() { 
+  const navigation = useNavigation();
+  
   return (
     <View style={estilos.container}>
-      <TouchableOpacity style={estilos.botao}>
+      <TouchableOpacity style={estilos.botao} onPress={() => navigation.navigate('CameraScreen')}>
         <Texto style={estilos.textoBotao}>Escanear Código de Barras</Texto>
       </TouchableOpacity>
     </View>
