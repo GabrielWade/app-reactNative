@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Index from "../telas/Home";
 import Camera from "../telas/Camera/camera";
+import Descartar from "../telas/Descartar/index";
 
 
 const Stack = createNativeStackNavigator();
@@ -14,6 +15,7 @@ export default function CameraRotas() {
             <Stack.Navigator initialRouteName="IndexScreen">
                 <Stack.Screen name='IndexScreen' component={Index}/>
                 <Stack.Screen name='CameraScreen' component={Camera}/>
+                <Stack.Screen name='DescartarScreen' component={Descartar}/>
             </Stack.Navigator >
        </NavigationContainer>  
     );
