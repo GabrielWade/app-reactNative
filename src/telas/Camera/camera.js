@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import PermissionComponent from '../Camera/componentes/PermissionComponent';
 import BarcodeComponent from '../Camera/componentes/BarcodeComponent';
 import { useNavigation } from "@react-navigation/native";
-
+import Texto from "../../componentes/Texto";
 
 export default function App() {
     const navigation = useNavigation();
@@ -18,8 +18,10 @@ export default function App() {
 
   const handleBarcodeScanned = (type, data) => {
     console.log(`Bar code with type ${type} and data ${data} has been scanned!`);
-    if (data === "1234" || data === "4321") {
-        navigation.navigate('DescartarScreen'); 
+    if (data === "1234") {
+      navigation.navigate('DescartarScreen', { productId: 1 });
+    } else if (data === "4321") {
+      navigation.navigate('DescartarScreen', { productId: 2 });
     }
   };
 
@@ -29,6 +31,7 @@ export default function App() {
         onPermissionGranted={handlePermissionGranted}
         onPermissionDenied={handlePermissionDenied}
       />
+      <Texto style={styles.textoTitulo}>APONTE PARA O CÓDIGO DE BARRAS</Texto>
       <BarcodeComponent onBarcodeScanned={handleBarcodeScanned} />
     </View>
   );
@@ -39,4 +42,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#025E14",
   },
+  textoTitulo: {
+    marginTop: "20%",
+    textAlign: "center",
+    color: "#FFBB00",
+    fontSize: 30,
+    fontWeight: "bold",
+},
 });

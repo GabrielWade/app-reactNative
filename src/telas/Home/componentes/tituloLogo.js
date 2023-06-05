@@ -21,7 +21,7 @@ const estilos = StyleSheet.create({
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: "50%",
+        marginTop: "40%",
     },
     textoTitulo: {
         color: "#FFBB00",

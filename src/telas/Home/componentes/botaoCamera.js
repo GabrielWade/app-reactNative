@@ -10,7 +10,7 @@ export default function BotaoCamera() {
   
   return (
     <View style={estilos.container}>
-      <TouchableOpacity style={estilos.botao} onPress={() => navigation.navigate('CameraScreen')}>
+      <TouchableOpacity style={estilos.botao} onPress={() => navigation.navigate('Camera')}>
         <Texto style={estilos.textoBotao}>Escanear Código de Barras</Texto>
       </TouchableOpacity>
     </View>

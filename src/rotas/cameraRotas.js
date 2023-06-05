@@ -13,8 +13,8 @@ export default function CameraRotas() {
     return (
        <NavigationContainer>
             <Stack.Navigator initialRouteName="IndexScreen">
-                <Stack.Screen name='IndexScreen' component={Index}/>
-                <Stack.Screen name='CameraScreen' component={Camera}/>
+                <Stack.Screen name='Home' component={Index}/>
+                <Stack.Screen name='Camera' component={Camera}/>
                 <Stack.Screen name='DescartarScreen' component={Descartar}/>
             </Stack.Navigator >
        </NavigationContainer>  
