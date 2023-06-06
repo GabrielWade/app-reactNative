@@ -5,10 +5,12 @@ Este projeto foi realizado com base no meu aprendizado na disciplina de Desenvol
 ## 📱 Projeto
 
 Este projeto tem como objetivo principal fornecer aos usuários um aplicativo onde eles possam escanear o código de barras de um produto específico e receber informações sobre a forma correta de descartá-lo. Ao abrir o aplicativo, os usuários terão a opção de escanear o código de barras do produto usando a câmera do seu dispositivo. Após a leitura bem-sucedida, o aplicativo exibirá uma tela com as instruções de descarte adequadas para aquele produto em particular. Essas informações podem incluir orientações sobre a reciclagem, descarte em lixo comum ou encaminhamento para pontos de coleta especializados. O objetivo final é promover a conscientização ambiental e ajudar os usuários a tomarem decisões mais sustentáveis em relação ao descarte de produtos.
-<img src="" width="350" />
+<img src="./assets/barcode1.png" width="350" />
+<img src="./assets/barcode2.png" width="350" />
 Devido à minha falta de conhecimento em API e banco de dados, atualmente o aplicativo suporta apenas a leitura dos seguintes códigos de barras:
-<img src="" width="350" />
-<img src="" width="350" />
+<img src="./assets/app1.png" width="350" />
+<img src="./assets/app2.png" width="350" />
+<img src="./assets/app3.png" width="350" />
 ## 🧑‍💻 Técnicas e Tecnologias
 
 As técnicas e tecnologias utilizadas no projeto são:
