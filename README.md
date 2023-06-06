@@ -8,9 +8,9 @@ Este projeto tem como objetivo principal fornecer aos usuários um aplicativo on
 <img src="./assets/barcode1.png" width="350" />
 <img src="./assets/barcode2.png" width="350" />
 Devido à minha falta de conhecimento em API e banco de dados, atualmente o aplicativo suporta apenas a leitura dos seguintes códigos de barras:
-<img src="./assets/app1.png" width="350" />
-<img src="./assets/app2.png" width="350" />
-<img src="./assets/app3.png" width="350" />
+<img src="./assets/app1.jpeg" width="350" />
+<img src="./assets/app2.jpeg" width="350" />
+<img src="./assets/app3.jpeg" width="350" />
 ## 🧑‍💻 Técnicas e Tecnologias
 
 As técnicas e tecnologias utilizadas no projeto são:
