@@ -43,6 +43,7 @@ const estilos = StyleSheet.create({
     textoTexto: {
         color: "#FFF",
         fontSize: 13,
+        fontWeight: "regular",
         marginHorizontal: "15%",
         textAlign: "justify",
     },

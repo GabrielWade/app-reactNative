@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, SafeAreaView, StatusBar } from "react-native";
 
 
 import TituloLogo from "./componentes/tituloLogo";
@@ -7,10 +7,11 @@ import BotaoCamera from "./componentes/botaoCamera";
 
 export default function Index () {
     return (
-        <View style={estilos.container}>
+        <SafeAreaView style={estilos.container}>
+            <StatusBar />
             <TituloLogo />
             <BotaoCamera/>
-        </View>
+        </SafeAreaView>
     );
 }
 

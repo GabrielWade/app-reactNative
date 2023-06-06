@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Produto1 from "../Descartar/produtos/produto1";
 import Produto2 from "../Descartar/produtos/produto2";
-import BotaoCamera from '../Home/componentes/botaoCamera';
+import BotaoScanearNovamente from "../Descartar/componetes/botaoScanearNovamente";
 export default function DescartarScreen({ route }) {
   const { productId } = route.params;
 
@@ -13,8 +13,10 @@ export default function DescartarScreen({ route }) {
     produtoComponent = <Produto2 />;
   }
   return (
+    
     <View style={estilos.container}>
       {produtoComponent}
+      <BotaoScanearNovamente />
     </View>
     
   );

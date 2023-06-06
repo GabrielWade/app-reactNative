@@ -5,7 +5,7 @@ const produto2 = {
     },
     conteudo: {
         imagem: imgProduto2,
-        titulo2: "Como esse produto deve descartado?",
+        titulo2: "Como esse produto deve ser descartado?",
         textoConteudo: "Remova as pilhas do dispositivo eletrônico.\n\n"+
         "Procure por pontos de coleta seletiva de pilhas na sua região.\n\n"+
         "Embale as pilhas usadas em papel alumínio ou sacos plásticos separados.\n\n"+
